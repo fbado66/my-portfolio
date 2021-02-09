@@ -1,17 +1,24 @@
 
-    let sideMenu = document.querySelector('.menu-btn')
+    let sandwichMenu = document.querySelector('.menu-btn')
     let responsiveMenu = document.querySelector('.menu')
     let menuIcon = document.querySelector('#side-menu-icon')
 
-sideMenu.addEventListener('click', () => {
-    responsiveMenu.classList.add('active')
-    menuIcon.className = "fas fa-times"
-        
-        menuIcon.addEventListener('click', () => {
-            sideMenu.className = "fas fa-bars"
-            responsiveMenu.remove('.active')
-        })
+sandwichMenu.addEventListener('click', () => {
+    responsiveMenu.classList.toggle('active')
+    menuIcon.classList.toggle('fa-times')
 })
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").className = "scroll-on-Y";
+  } else {
+    document.getElementById("navbar").className = "";
+  }
+}
+
+
 
 
 
