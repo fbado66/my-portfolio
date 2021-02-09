@@ -11,10 +11,13 @@ sandwichMenu.addEventListener('click', () => {
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").className = "scroll-on-Y";
+  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+    document.getElementById("navbar").className = "scroll-on-Y"
+    document.getElementById('logo').className ='logo-black'
   } else {
     document.getElementById("navbar").className = "";
+    document.getElementById('logo').className = ""
+
   }
 }
 

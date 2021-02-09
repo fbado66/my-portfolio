@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    /* background: #282726; */
 }
 
 /* NAVBAR STYLING  */
 .navbar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 15px 0;
 }
@@ -24,6 +25,10 @@
     color: red;
     font-size: 35px;
     font-weight: 500;
+}
+
+.logo-black a {
+    color: black!important
 }
 
 .full-width {
@@ -154,7 +159,7 @@
         width: 100%;
         left: -100%;
         top: 0;
-        background: black;
+        background: #282726;
         text-align: center;
         padding-top: 50px;
         transition: all 0.5s ease;
@@ -174,3 +179,43 @@
         font-size: 25px;
     }
 }
+
+.home .home-content a {
+display: inline-block;
+background: red;
+color: white;
+font-size: 20px;
+padding: 10px 30px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid red;
+transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color:white;
+    background: none;
+}
+
+
+/* ABOUT SECTION STYLYING  */
+section {
+    padding: 100px 0;
+}
+
+.about .title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.about .about-content .column-left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+}
+
+
