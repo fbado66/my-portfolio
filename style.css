@@ -10,6 +10,7 @@
     position: absolute;
     width: 100%;
     padding: 15px 0;
+    z-index: 999;
 }
 
 .scroll-on-Y {
@@ -142,6 +143,138 @@
     display: none;
 }
 
+
+.home .home-content a {
+display: inline-block;
+background: red;
+color: white;
+font-size: 20px;
+padding: 10px 30px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid red;
+transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color:white;
+    background: none;
+}
+
+
+/* ABOUT SECTION STYLYING  */
+section {
+    padding: 100px 0;
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.about .title::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.about .title::after {
+    content: 'Who I am';
+    position: absolute;
+    padding: 5px;
+    background: white;
+    color: red;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .column-left {
+    width: 45%;
+}
+
+.about .about-content .column-left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about .about-content .column-right {
+    width: 55%;
+}
+
+.about .about-content .column-right .text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about .about-content .column-right .text span {
+    color: red;
+}
+
+.about .about-content .column-right p {
+    text-align: justify;
+}
+
+.about .about-content .column-right a {
+    display: inline-block;
+background: red;
+color: white;
+font-size: 18px;
+padding: 10px 30px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid red;
+transition: all 0.3s ease;
+}
+
+.about .about-content .column-right a:hover {
+    background: none;
+    color: red;
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+    .about .about-content .column-left img {
+        height: 350px;
+        width: 350px;
+    }    
+}
+
+@media (max-width: 950px) {
+
+    .about .about-content .column-right {
+        flex: 100%;
+    }
+
+    .about .about-content .column-left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+}
+
+
 @media (max-width: 800px) {
 
     .full-width {
@@ -178,44 +311,12 @@
         margin: 20px 0; 
         font-size: 25px;
     }
-}
 
-.home .home-content a {
-display: inline-block;
-background: red;
-color: white;
-font-size: 20px;
-padding: 10px 30px;
-margin-top: 20px;
-border-radius: 6px;
-border: 2px solid red;
-transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color:white;
-    background: none;
+    
 }
 
 
-/* ABOUT SECTION STYLYING  */
-section {
-    padding: 100px 0;
-}
 
-.about .title {
-    text-align: center;
-    font-weight: 500;
-    font-size: 35px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-}
 
-.about .about-content .column-left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-
-}
 
 
