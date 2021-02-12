@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     /* font-weight: 500; */
     line-height: 24px;
@@ -619,7 +619,7 @@ section .title::after {
         }
 
         .home {
-            /* min-width: 100%; */
+            min-width: 100%;
             object-fit: cover;
             /* background-size: 375px auto; */
 
