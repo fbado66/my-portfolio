@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /* background: #282726; */
+    font-family: "Nunito", sans-serif;
+
+    /* font-weight: 500; */
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+}
+
+section {
+    /* background: rgb(57, 55, 55) */
+    background: linear-gradient(to right, #ababa785, #0c0a07 );
 }
 
 /* NAVBAR STYLING  */
@@ -24,7 +34,7 @@
 
 .navbar .logo a {
     color: red;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 500;
 }
 
@@ -49,7 +59,8 @@
 
 .navbar .menu li a {
     color: white;
-    font-size: 18px;
+    text-transform: capitalize;
+    font-size: 22px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -66,11 +77,15 @@
 /* HOME SECTION STYLING  */
 .home {
     display: flex;
-    background: url('images/ducks.jpg');
+    background: url('images/background-3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 1400px;
+    min-width: 1000px;
+    object-fit: center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    z-index: 999
+    z-index: -999
 }
 
 .home .full-width {
@@ -168,12 +183,13 @@ section {
 }
 
 section .title {
+    font-family: 'Sura', serif;
     position: relative;
     text-align: center;
     font-weight: 500;
     font-size: 35px;
     margin-bottom: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 section .title::before {
@@ -195,7 +211,8 @@ section .title::after {
     content: 'Who I am';
     position: absolute;
     padding: 5px;
-    background: white;
+    /* background: #c7c0ba ; */
+    background-color: inherit;
     color: red;
     bottom: -12px;
     left: 50%;
@@ -221,6 +238,12 @@ section .title::after {
     object-fit: cover;
     z-index: 999;
     transform: translate(-10px, -10px);
+    filter: grayscale(60%);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .column-left img:hover {
+    filter: grayscale(0%);
 }
 
 .about .about-content .column-left .image-square {
@@ -276,6 +299,7 @@ section .title::after {
 
 /* MY SKILLS SECTION ----- */
 .skills .title::after {
+    font-family: 'Sura', serif;
     content: 'What I provide'
 }
 
@@ -316,6 +340,7 @@ section .title::after {
 /* --------- PROJECTS SECTION STYLYING --------- */
 
 .projects .title::after {
+    font-family: 'Sura', serif;
     content: "What I have created"
 }
 
@@ -335,11 +360,15 @@ section .title::after {
     margin: 0 5%;
     border: 1px solid red;
     transition: all 0.3s ease;
+    filter: grayscale(70%);
+
 }
 
 .projects .holder img:hover {
     box-shadow: 1.5px 1.5px 1px red;
     transform: scale(1.01);
+    filter: grayscale(0%);
+
 }
 
 .projects .holder .column-left {
@@ -353,23 +382,34 @@ section .title::after {
 }
 
 .projects .project-title {
+    font-family: 'Sura', serif;
     text-align: center;
     margin-top: 70px;
 }
 
 .description {
-    margin: 0 20%;
+    margin: 0 13%;
 }
 
 .projects .holder .description {
-    border: 2px solid #222;
-    padding: 10px 15px;
+    margin-top: 10px;
+    background: transparent;
+    /* filter: grayscale(100%); */
+    border: 2px solid rgba(82, 80, 80, 0.5);
+
+    /* background: linear-gradient(to right, #aba8a6, #86817c); */
+    /* border: 2px solid #222; */
+    padding: 20px 25px;
+    color: white;
+    border-radius: 6px;
 }
 
 .tech-stacks {
-    /* text-align: center; */
     margin-left: 11%;
+}
 
+.holder {
+    padding: -15px 0 40px 0;
 }
 
 .projects .holder .tech-stacks ul {
@@ -377,14 +417,19 @@ section .title::after {
 }
 
 .projects .holder .source ul {
-    margin: 10px 0;
+    margin: 10px 11%;
     float: right;    
 }
 
 .projects .holder .tech-stacks li {
     list-style: none;
-    display: inline;
-    padding: 7px;
+    display: inline-block;
+    border-bottom: 2px solid red;
+    border-radius: 6px;
+    padding: 5px 7px;
+    margin: 10px;
+    font-weight: 600;
+    
 }
 
 .projects .holder .source li {
