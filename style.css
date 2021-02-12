@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
 
     /* font-weight: 500; */
     line-height: 24px;
@@ -601,12 +602,31 @@ section .title::after {
 
     @media (max-width: 376px) {
 
+        /* * {
+            overflow-x: hidden;
+        } */
+
+        .holder .other-column-right,  .holder .other-column-left {
+            width: 100%;
+        }
+
+        .full-width {
+            padding: 2% 3%;
+        }
+
+        .about .about-content .column-right, .about .about-content .column-left  {
+            width: 100%;
+        }
+
         .home {
-            min-width: 100%;
+            /* min-width: 100%; */
+            object-fit: cover;
+            /* background-size: 375px auto; */
+
         }
 
         .projects .holder img {
-            margin: auto -40px;
+            /* margin: auto -40px; */
             width: 350px;
             z-index: 99;
             display: inline-block;
@@ -615,7 +635,7 @@ section .title::after {
         .projects .holder img:hover {
             transform: scale(1.01);
             width: 350px;
-            }
+        }
 
         
         
