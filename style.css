@@ -600,6 +600,11 @@ section .title::after {
 }
 
     @media (max-width: 376px) {
+
+        .home {
+            min-width: 100%;
+        }
+
         .projects .holder img {
             margin: auto -40px;
             width: 350px;
