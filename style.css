@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     /* font-weight: 500; */
     line-height: 24px;
@@ -602,9 +602,9 @@ section .title::after {
 
     @media (max-width: 376px) {
 
-        /* * {
+        * {
             overflow-x: hidden;
-        } */
+        }
 
         .holder .other-column-right,  .holder .other-column-left {
             width: 100%;
