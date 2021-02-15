@@ -290,6 +290,13 @@ header {
         }
 }
 
+@media (max-width: 450px) {
+    .logo h2 {
+        font-size: var(--fs-h3)
+    }
+
+}
+
 /* --------------Introduction / Home --------------------  */
 
 .introduction {
@@ -360,22 +367,54 @@ header {
     opacity: 0.2;
 }
 
+.skills {
+    text-align: center;
+}
+
 .skill {
     max-width: 500px;
     min-width: 30%;
-    margin: 0 auto;
+    margin: 2em auto;
+}
+
+.skill h3 strong{
+    line-height: 1.2;
+}
+
+.skill p {
+    transition: all .3s ease-in-out;
+}
+
+.skill p:hover {
+    transform: scale(1.08)
+}
+
+.framework_icon {
+    height: 2em;
+}
+.skill img {
+    width: 2em;
+    border-radius: 1em;
+    display: inline-block;
+    transform: translate(0, .4em)
 }
 
 .skills {
     margin-bottom: 4em;
 }
 
+#font_icon {
+   margin: 0 1em;
+}
+
 @media (min-width: 800px) {
+    
     .skills {
         display: flex;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        text-align: left;
     }
 }
 
@@ -442,19 +481,21 @@ header {
 
 .icon_links li {
     padding: 0 .6em;
+    cursor: pointer;
 }
 
 .svg-inline--fa {
     font-size: 30px;
 }
 
-.demo {
+.demo a {
     color: var(--clr-light);
     transition: all .2s ease-in-out;
 }
 
-.demo:hover {
+.demo a:hover {
     color: red;
+    padding: 1px;
 }
 
 .live {
@@ -462,17 +503,27 @@ header {
     transition: all .2s ease-in-out;
 }
 
-.live:hover {
-    color: green;
+.live a {
+    color: #fff;
+    transition: all .2s ease-in-out;
+
 }
 
-.code {
+.live a:hover {
+    color: green;
+    padding: 1px;
+
+}
+
+.code a{
     color: var(--clr-light);
     transition: all .2s ease-in-out;
 }
 
-.code:hover {
+.code a:hover {
     color: lightblue;
+    padding: 1px;
+
 }
 
 .section_title_project {
