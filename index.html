@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet"></head> --> 
 <body>
 
 
@@ -25,13 +23,24 @@
         <button class='nav-toggle' aria-label='toggle navigation'>
             <span class='hamburger'></span>
         </button>
+        <!-- Desktop View Nav Bar -->
+        <nav class='main_nav'>
+            <ul class='nav_links'>
+                <li class='main_nav_item'><a href='#home' class='link'>Home</a></li>
+                <li class='main_nav_item'><a href='#skills' class='link'>skills</a></li>
+                <li class='main_nav_item'><a href='#about' class='link'>About</a></li>
+                <li class='main_nav_item'><a href='#projects' class='link'>Projects</a></li>
+                <li class='main_nav_item'><a href='#contact-me' class='link'>Contact Me</a></li>
+            </ul>
+        </nav>
+        <!-- Devices View Nav Bar -->
         <nav class='nav'>
             <ul class='nav_list'>
-                <li class='nav_item'><a href='#' class='nav-link'>Home</a></li>
-                <li class='nav_item'><a href='#' class='nav-link'>skills</a></li>
-                <li class='nav_item'><a href='#' class='nav-link'>About</a></li>
-                <li class='nav_item'><a href='#' class='nav-link'>Projects</a></li>
-                <li class='nav_item'><a href='#' class='nav-link'>Contact Me</a></li>
+                <li class='nav_item'><a href='#home' class='nav_link'>Home</a></li>
+                <li class='nav_item'><a href='#skills' class='nav_link'>skills</a></li>
+                <li class='nav_item'><a href='#about' class='nav_link'>About</a></li>
+                <li class='nav_item'><a href='#projects' class='nav_link'>Projects</a></li>
+                <li class='nav_item'><a href='#contact-me' class='nav_link'>Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -109,7 +118,7 @@
             <div class='project'>
                 <p class='section_subtitle section_subtitle_projects'><strong>Foodies Road</strong></p>
                 <div class='project_item'>
-                    <img src='images/foodies_road.png' alt='' class='project_img'/>
+                    <img src='images/foodies_road.png' alt='facade image for foodies road' class='project_img'/>
                 </div>
                     <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
                         This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
@@ -124,10 +133,9 @@
             <div class='project'>
                 <p class='section_subtitle section_subtitle_projects'><strong>Pamela Panel</strong></p>
                 <div class='project_item'>
-                    <img src='images/admin_panel.png' alt='' class='project_img'/>
+                    <img src='images/admin_panel.png' alt='facade image for pamela panel' class='project_img'/>
                 </div>
-                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
-                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                    <p> A fun client-side oriented Admin Panel to easily manage data regarding fictitious courses, cohorts, students, instructors, and reminders. This entire application was built with Ruby on Rails, and the use of Ajax calls to enhance CRUD functionality.</p>
                         <ul class='icon_links'>
                             <li class='demo'><i class="fa fa-play-circle"></i></li>
                             <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
@@ -139,10 +147,11 @@
             <div class='project'>
                 <p class='section_subtitle section_subtitle_projects'><strong>Igor Care</strong></p>
                 <div class='project_item'>
-                    <img src='images/igor_care.png' alt='' class='project_img'/>
+                    <img src='images/igor_care.png' alt='facade image for Igor Care' class='project_img'/>
                 </div>
-                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
-                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                    <p >A web application with three different types of users, where health requests are made and address. 
+                        This application was built with Rails for Front-End and Back-End. There is an implementation of bcript for user authentication, the use of database for holding the information, and Bootstrap to help with the load of stylying
+                        </p>
                         <ul class='icon_links'>
                             <li class='demo'><i class="fa fa-play-circle"></i></li>
                             <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
@@ -154,10 +163,11 @@
             <div class='project'>
                 <p class='section_subtitle section_subtitle_projects'><strong>Life After Covid</strong></p>
                 <div class='project_item'>
-                    <img src='images/life_after_covid.png' alt='' class='project_img'/>
+                    <img src='images/life_after_covid.png' alt='facade for live after covid ' class='project_img'/>
                 </div>
-                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
-                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                    <p >Fun project where I worked with a partner to create a Single-page web application that allows users to purchase PPE Products. 
+                        This application was build with plain old Javascript for the Front-End and Ruby on Rails as an API for the Back-End. There are 6 model associations, fetch requests, manipulation of the DOM and rasmattazz with custom CSS.
+                    </p>
                         <ul class='icon_links'>
                             <li class='demo'><i class="fa fa-play-circle"></i></li>
                             <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
