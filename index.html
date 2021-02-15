@@ -5,33 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franklin Bado Portfolio</title>
 
-    <!-- TYPO FOR FONT LINK SCRIPT 
-            <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
-
-    <!-- It's due to the restricted link you are using for fontawesome. 
-    Try to replace the "https://kit.fontawesome.com/ba33ab971e.js" 
-    with "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js".  -->
-
-
     <script defer src='main.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet"></head>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet"></head> --> 
 <body>
-    <nav class='navbar'>
+
+
+    <header>
+        <div class='logo'>
+            <h2>FranklinB</h2>
+        </div>
+        <button class='nav-toggle' aria-label='toggle navigation'>
+            <span class='hamburger'></span>
+        </button>
+        <nav class='nav'>
+            <ul class='nav_list'>
+                <li class='nav_item'><a href='#' class='nav-link'>Home</a></li>
+                <li class='nav_item'><a href='#' class='nav-link'>skills</a></li>
+                <li class='nav_item'><a href='#' class='nav-link'>About</a></li>
+                <li class='nav_item'><a href='#' class='nav-link'>Projects</a></li>
+                <li class='nav_item'><a href='#' class='nav-link'>Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Introduction/Home-->
+    <section class='introduction' id='home'>
+        <h1 class='section_title section_title_introduction'>
+            Hi, I am <strong>Franklin Bado</strong>
+        </h1>
+        <p class='section_subtitle section_subtitle_introduction'><strong>A Software Engineer</strong></p>
+        <img src='images/franklin_bado.jpg' alt='a picture of Franklin Bado' class='introduction_img'/>
+    </section>
+
+    <!--Skills -->
+    <section class='my-skills' id='skills'>
+        <h2 class='section_title section_title_skills'>Skills</h2>
+        <div class='skills'>
+
+            <div class='skill'>
+                <h3><strong>Programming Languages</strong> </h3>
+                <p>Javascript <i class='fas fa-bars'></i></p> 
+                <p>Ruby <i class='fas fa-bars'></i></p>
+                <p>SQL <i class='fas fa-bars'></i></p>
+                <p>HTML <i class='fas fa-bars'></i></p>
+                <p>CSS <i class='fas fa-bars'></i></p>
+            </div>
+
+            <div class='skill'>
+                <h3><strong>Frameworks + Libraries</strong> </h3>
+                <p>React <i class='fas fa-bars'></i></p> 
+                <p>Rails <i class='fas fa-bars'></i></p>
+                <p>Sinatra <i class='fas fa-bars'></i></p>
+                <p>SASS <i class='fas fa-bars'></i></p>
+                <p>Material UI <i class='fas fa-bars'></i></p>
+                <p>Bootstrap <i class='fas fa-bars'></i></p>
+                <p>Materialize <i class='fas fa-bars'></i></p>
+            </div>
+
+            <div class='skill'>
+                <h3><strong>Application Softwares</strong> </h3>
+                <p>AutoCAD <i class='fas fa-bars'></i></p> 
+                <p>Figma <i class='fas fa-bars'></i></p>
+                <p>Salesforce<i class='fas fa-bars'></i></p>
+                <p>Hubspot <i class='fas fa-bars'></i></p>
+                <p>MailChimp <i class='fas fa-bars'></i></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--About Me -->
+
+    <section class='about_me' id='about'>
+        <h2 class='section_title section_title_about'>Who I am</h2>
+        <p class='section_subtitle section_subtitte_about'>Full Stack Engineer based in New York City</p>
+        <div class='about_me_body'>
+                    <p> Focused Full Stack Engineer with a background in Applied Mathematics specializing in user experience. I enjoy learning the functionality of things, how users interact with technology every day, and finding ways to push the limits of my knowledge to come up with lateral thinking on enhancing applications.
+                        And so my inspiration to become a web developer was born from having an idea and finding ways to make it into a web application with a clean user interface.<br><br>
+                        I have 6+ years in the service industry, learning first-handed how to improve user's experience from working with Customer Relationship Management Platforms (CRM), dealing with sub-contractors, all the way to customer services.<br><br>
+                        Outside of work, you can find me watching DIY videos, and attempting to recreate carpentry work, enjoying a good chess game, or helping a family member with Math homework.
+                    </p>
+        </div>
+        <img src='images/franklin_bado.jpg' alt='Franklin Bado image' class='about_me_img'/>
+        <a href='#' class='btn'>Download CV</a>
+    </section>
+
+    <!--Projects-->
+
+    <section class='projects' id='projects'>
+        <h2 class='section_title section_title_project'>Projects</h2>
+
+        <div class='portfolio'>
+            <!--Project 1 -->
+            <div class='project'>
+                <p class='section_subtitle section_subtitle_projects'><strong>Foodies Road</strong></p>
+                <div class='project_item'>
+                    <img src='images/foodies_road.png' alt='' class='project_img'/>
+                </div>
+                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
+                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                        <ul class='icon_links'>
+                            <li class='demo'><i class="fa fa-play-circle"></i></li>
+                            <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
+                            <li class='code'><i class='fab fa-github-alt'></i></li>
+                        </ul>   
+            </div>
+
+            <!--Project 2 -->
+            <div class='project'>
+                <p class='section_subtitle section_subtitle_projects'><strong>Pamela Panel</strong></p>
+                <div class='project_item'>
+                    <img src='images/admin_panel.png' alt='' class='project_img'/>
+                </div>
+                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
+                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                        <ul class='icon_links'>
+                            <li class='demo'><i class="fa fa-play-circle"></i></li>
+                            <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
+                            <li class='code'><i class='fab fa-github-alt'></i></li>
+                        </ul>     
+            </div>
+
+            <!--Project 3 -->
+            <div class='project'>
+                <p class='section_subtitle section_subtitle_projects'><strong>Igor Care</strong></p>
+                <div class='project_item'>
+                    <img src='images/igor_care.png' alt='' class='project_img'/>
+                </div>
+                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
+                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                        <ul class='icon_links'>
+                            <li class='demo'><i class="fa fa-play-circle"></i></li>
+                            <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
+                            <li class='code'><i class='fab fa-github-alt'></i></li>
+                        </ul>     
+            </div>
+
+            <!--Project 4 -->
+            <div class='project'>
+                <p class='section_subtitle section_subtitle_projects'><strong>Life After Covid</strong></p>
+                <div class='project_item'>
+                    <img src='images/life_after_covid.png' alt='' class='project_img'/>
+                </div>
+                    <p >A food delivery service web application that allows users to search restaurants, view their menu, place orders and leave reviews.
+                        This application was built using React.Js for the Front-End and a Rails as an API for the Back-End</p>
+                        <ul class='icon_links'>
+                            <li class='demo'><i class="fa fa-play-circle"></i></li>
+                            <li class='live'><i class="material-icons" style='font-size: 33px'>public</i></li>
+                            <li class='code'><i class='fab fa-github-alt'></i></li>
+                        </ul>    
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me-->
+    <section class='contact_me' id='contact-me'>
+        <h2 class='section_title section_title_contact'>Get in Touch</h2>
+        <p>Thank you for stoping by. I appreciate you taking the time to go through my portfolio. If you have a potential role, want to get a project started, need help with something, or want to formaly say hi, then get in touch.</p>
+
+        <a href='mailto:fbado66@gmail.com' class=btn>fbado66@gmail.com</a>
+        <ul class='social_list'>
+            <li class='social_list_item'><a class='social_list_link linkedin'  href='#'><i class='fab fa-linkedin'></i></a></li>
+            <li class='social_list_item'><a class='social_list_link medium' href='#'><i class='fab fa-medium'></i></a></li>
+            <li class='social_list_item'><a class='social_list_link github' href='#'><i class='fab fa-github'></i></a></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav class='navbar'>
         <div id='navbar'>
             <div class='full-width'>
                 <div id='logo'>
                 <div class='logo'><a href='#'>Portfolio</a></div>
             </div>
                 <ul class='menu'>
-                    <li><a href=''>Home</a></li>
-                    <li><a href=''>About</a></li>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
                     <li><a href=''>Skills</a></li>
                     <li><a href=''>Projects</a></li>
                     <li><a href=''>Contact</a></li>
@@ -41,10 +227,10 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- ---------- HOME SECTION --------------- -->
-    <section class='home' id='home'>
+    <!-- <section class='home' id='home'>
         <div class='full-width'>
             <div class='home-content'>
                 <div class='type-writer'>I am Franklin Bado</div>
@@ -52,9 +238,9 @@
                 <a href='#'>Contact Me</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- -----------------ABOUT SECTION ------------------ -->
+    <!-- -----------------ABOUT SECTION ------------------
 
     <section class='about' id='about'>
         <div class='full-width'>
@@ -77,10 +263,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ---------MY SKILLS SECTION ----------------- -->
-    <section class='skills' id='skills'>
+    <!-- <section class='skills' id='skills'>
         <div class='full-width'>
             <h2 class='title'>My Skills</h2>
             <div class='skills-content'>
@@ -126,15 +312,14 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ---------- PROJECTS SECTION ------------ -->
-
+<!-- 
     <section class='projects' id='projects'>
         <div class='full-width'>
             <h2 class='title'>Featured Projects</h2>
 
-            <!-- Project # 1 -->
             <h3 class='project-title'>Foodies Road </h3>
             <div class='holder' >   
                 <div class='column-left'><img src='images/foodies_road.png' alt='foodies Road'/></div>
@@ -166,7 +351,6 @@
                 </div>
             </div>
 
-            <!-- Project # 2 -->
             <h3 class='project-title'>Pamela Panel </h3>
             <div class='holder' >
                 <div class='column-left'>
@@ -191,7 +375,6 @@
                 <div class='column-right'><img src='images/admin_panel.png' alt='Pamela Panel'/></div>
             </div>
 
-            <!-- Project # 3 -->
             <h3 class='project-title'>Igor Care </h3>
             <div class='holder' >
                 <div class='column-left'><img src='images/igor_care.png' alt='Igor Care'/></div>
@@ -216,7 +399,6 @@
                 </div>
             </div>
 
-            <!-- Project # 4 -->
             <h3 class='project-title'>Life After COVID</h3>
             <div class='holder' >
                 <div class='column-left'>
@@ -252,7 +434,7 @@
                 </div>
             </div>
        
-    </section>
+    </section> -->
 
 </body>
 </html>
