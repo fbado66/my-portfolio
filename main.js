@@ -20,6 +20,8 @@
 
 //   }
 // }
+// const menuIcon = document.querySelector('#icon')
+
 
 const navTogggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav_link')

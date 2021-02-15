@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* --------Custom Props----------------- */
@@ -136,7 +137,8 @@ header {
 }
 
 .logo {
-    max-width: 120px;
+    max-width: 230px;
+    z-index: 999;
 }
 
 .main_nav .nav_links {
@@ -210,28 +212,49 @@ header {
 .hamburger {
     display: block;
     position: relative;
+    color: var(--cl-accent)
 }
 
-.hamburger,
+.hamburger i {
+    font-size: 40px;
+    width: 40px;
+    color: var(--cl-accent)
+}
+
+ .close_icon {
+    visibility: none;
+}
+
+.open_icon  {
+    visibility: visible;
+}
+
+/* .hamburger,
 .hamburger::before, 
 .hamburger::after {
     background: var(--cl-accent);
     width: 2.5em;
-    height: 3px;
+    height: 40px;
     border-radius: 1em;
     transition: transform .2s ease-in-out;
-}
+} */
 
-.hamburger::before, 
+/* .hamburger::before, 
 .hamburger::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
+    width: 3em;
+    z-index: 1000
 }
 
 .hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::after { bottom: 6px;  } */
+
+.hamburger {
+    transform: rotate(.625turn);
+}
 
 .nav_open .nav{
     transform: translateX(0)
@@ -242,7 +265,7 @@ header {
 }
 
 .nav_open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(0);
 }
 
 .nav_open .hamburger::before {
@@ -261,6 +284,10 @@ header {
     .main_nav .nav_links {
         visibility: hidden;
     }
+
+        .logo h2 {
+            width: 300px;
+        }
 }
 
 /* --------------Introduction / Home --------------------  */
@@ -364,6 +391,7 @@ header {
 }
 
 @media (min-width: 600px) {
+
     .about_me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -494,6 +522,7 @@ header {
 }
 
 @media (max-width: 800px) {
+
     .portfolio {
         grid-template-columns: repeat(auto-fit, minmax(100%, 2fr)); 
         padding: 0;       
