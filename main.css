@@ -15,8 +15,8 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --cl-accent: #16e0bd;
+    --clr-dark: #454343;
+    --cl-accent: #6c9f19;
 
     --fs-h1: 3rem;
     --fs-h2:2.25rem;
@@ -530,6 +530,10 @@ header {
     color: var(--cl-accent);
     position: relative;
     margin-bottom: 1.5em;
+}
+
+.projects .section_subtitle strong {
+    color: var(--cl-accent)
 }
 
 .section_title_project::after {
