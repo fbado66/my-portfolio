@@ -72,13 +72,12 @@ section { padding: 5em 2em;}
     padding: 1em 1.5em;
     background: var(--cl-accent);
     color: var(--clr-light);
-    text-shadow: 1px .2px var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: var(--fw-bold);
+    font-weight: bolder;
     transition: transform 0.2s ease-in-out;
     width: 200px;
     text-align: center;
@@ -154,9 +153,8 @@ header {
 
 .link {
     text-decoration: none;
-    color: (var(--clr-dark));
-    font-weight: var(--fw-bold);
-    text-shadow: 1px .1px var(--clr-dark)
+    color: black;
+    font-weight: bolder;
 }
 
 .main_nav_item:hover {
