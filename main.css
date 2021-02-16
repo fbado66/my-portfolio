@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    overflow-x: hidden;
+    
 }
 
 /* --------Custom Props----------------- */
@@ -12,7 +12,7 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 1200;
 
     --clr-light: #fff;
     --clr-dark: #454343;
@@ -25,6 +25,7 @@
 
     --box-shd: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
                 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.125) ;
+
 
 }
 
@@ -49,6 +50,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 img {
@@ -69,7 +71,7 @@ section { padding: 5em 2em;}
     display: block;
     padding: 1em 1.5em;
     background: var(--cl-accent);
-    color: var(--cl-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -121,6 +123,8 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: var(--clr-light);
+
 }
 
 .section_subtitle_projects {
@@ -305,11 +309,14 @@ header {
 
 .introduction_img {
     box-shadow: var(--box-shd);
+    box-shadow: 0.3em 0.3em #fff,
+        .4em .4em var(--cl-accent) ;
 }
 
 .section_subtitle_introduction {
     display: inline-block;
 }
+
 
 @media (min-width: 600px) {
     .introduction {
@@ -329,6 +336,17 @@ header {
         position: relative;
         z-index: 99;
     }
+
+    .container_img {
+        grid-area: img;
+        min-width: 250px;
+        border: 1px solid var(--cl-accent);
+        margin-top: 3%;
+        margin-left: 3%;
+        height: 100%;
+        position: absolute
+    }
+
 
     .section_subtitle_introduction {
         align-self: start;
@@ -368,7 +386,7 @@ header {
 }
 
 .skills {
-    text-align: center;
+    text-align: left;
 }
 
 .skill {
@@ -426,8 +444,10 @@ header {
 }
 
 .about_me_img {
-    box-shadow: var(--box-shd);
+    box-shadow: 0.3em 0.3em #fff,
+        .4em .4em var(--cl-accent) ;
 }
+
 
 @media (min-width: 600px) {
 
@@ -437,10 +457,12 @@ header {
         grid-template-areas: 
         "title img"
         "subtitle img"
+        "holder img"
         'text img';
         grid-column-gap: 2em;
     }
 
+    
     .section_title_about{
         grid-area: title;
     }
@@ -454,6 +476,7 @@ header {
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
+ 
 
     .about_me_img {
         grid-area: img;
@@ -635,5 +658,9 @@ header {
 @media (max-width: 600px) {
     .social_list {
         margin-left: -20px;
+    }
+
+    html {
+        overflow-x:hidden;
     }
 }
