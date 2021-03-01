@@ -631,6 +631,17 @@ header {
     }
 }
 
+/* ------------- MINI PROJECTS ------------------------- */
+.spacer {
+    margin: 100px 0 40px 0;
+}
+
+.mini_project {
+    max-width: 660px;
+    margin: 0 auto;
+
+}
+
 /* ----------------- CONTACT ME SECTION -------------------  */
 .contact_me {
     max-width: 1000px;
